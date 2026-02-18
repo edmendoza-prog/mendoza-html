@@ -4,34 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Ed HTML</title>
+    <title>Personal Portfolio</title>
 </head>
 <body>
-    <h1>Gunsmiths Guide</h1>
-    <p>Welcome!</p>
+    <!-- Header with name and navigation -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <p class="badge">Personal Portfolio</p>
+                <h1>Hello! I'm Ed Ryan S. Mendoza</h1>
+                <p class="tagline">Web Developer / Student / Game Developer</p>
+            </div>
+        </div>
+    </header>
 
-    <nav>
-        <a href="home.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+    <nav class="nav-bar" aria-label="Primary">
+        <div class="container">
+            <div class="site-nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
     </nav>
 
-    <main>
-        <strong><p>Welcome to About Us!</p></strong>
-        <p>At Gunsmiths Guide, we’re passionate gamers dedicated to helping the Call of Duty: Mobile community get the most out of their weapons. Our mission is simple: provide clear, detailed, and easy-to-understand information about every Gunsmith attachment so players can build the perfect loadouts for their playstyle.</p>
-        
-        <br>
+    <main class="container">
+        <!-- Home section -->
+        <section id="home" class="section hero">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <p class="eyebrow">Hello</p>
+                    <h2>Building clean, responsive experiences.</h2>
+                    <p>Hello and welcome! This is a short introduction about who I am and what I enjoy building.</p>
+                    <div class="cta-row">
+                        <a class="button" href="#projects">View my work</a>
+                        <a class="button ghost" href="#contact">Contact me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <p>Whether you’re a beginner learning the ropes or a seasoned veteran chasing the ultimate setup, our goal is to make your weapon customization process faster, smarter, and more effective. We analyze attachments, test combinations, and share strategies so you can focus on what matters—dominating the battlefield.</p>
-        
-        <br>
+        <!-- About section -->
+        <section id="about" class="section">
+            <h2>About</h2>
+            <p>Talk about how you got started, what you are currently learning, and the kind of projects you enjoy building. You can also mention your values, such as clean code, collaboration, or continuous improvement.</p>
+            <h3>Skills</h3>
+            <ul class="skill-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Design Basics</li>
+            </ul>
+        </section>
 
-        <p>We believe that every attachment counts, and every player deserves the knowledge to play at their best. Join us, level up your game, and make every match count.</p>
+        <!-- Projects section -->
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <img class="project-image" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400'><rect width='600' height='400' fill='%23f1f3f8'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='28' fill='%235b6373'>Project One</text></svg>" alt="Project One preview">
+                    <h3>Project One</h3>
+                    <p>A clean landing page that highlights a product with strong calls-to-action and responsive layout.</p>
+                </article>
+                <article class="project-card">
+                    <img class="project-image" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400'><rect width='600' height='400' fill='%23f1f3f8'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='28' fill='%235b6373'>Project Two</text></svg>" alt="Project Two preview">
+                    <h3>Project Two</h3>
+                    <p>A personal blog layout with readable typography, category tags, and mobile-friendly spacing.</p>
+                </article>
+                <article class="project-card">
+                    <img class="project-image" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400'><rect width='600' height='400' fill='%23f1f3f8'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='28' fill='%235b6373'>Project Three</text></svg>" alt="Project Three preview">
+                    <h3>Project Three</h3>
+                    <p>A simple portfolio gallery that organizes projects with cards, hover states, and clear labels.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:ed.mendoza@urios.edu.ph">ed.mendoza@urios.edu.ph</a></p>
+            <div class="social-links">
+                <a href="https://github.com/edmendoza-prog">GitHub</a>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Ed Ryan S. Mendoza</p>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Ed Ryan S. Mendoza. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
